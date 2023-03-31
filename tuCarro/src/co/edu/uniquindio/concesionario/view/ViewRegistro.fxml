@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="421.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.concesionario.controller.ViewRegistroController">
+   <children>
+      <Label fx:id="lblDocumento" layoutX="48.0" layoutY="61.0" text="Documento" />
+      <Label layoutX="56.0" layoutY="159.0" />
+      <Label fx:id="lblTelefono" layoutX="47.0" layoutY="142.0" text="Telefono" />
+      <Label fx:id="lblEmail" layoutX="42.0" layoutY="239.0" text="email" />
+      <Label fx:id="lblApellido" layoutX="269.0" layoutY="104.0" text="Apellido" />
+      <Label fx:id="lblNacimiento" layoutX="253.0" layoutY="142.0" prefHeight="17.0" prefWidth="77.0" text="Nacimiento" />
+      <Label fx:id="lblNombre" layoutX="48.0" layoutY="104.0" text="Nombre" />
+      <TextField fx:id="txtDocumento" layoutX="111.0" layoutY="57.0" />
+      <TextField fx:id="txtEmail" layoutX="80.0" layoutY="227.0" />
+      <TextField fx:id="txtNombre" layoutX="92.0" layoutY="100.0" />
+      <TextField fx:id="txtApellido" layoutX="313.0" layoutY="100.0" />
+      <TextField fx:id="txtTelefono" layoutX="92.0" layoutY="138.0" />
+      <Label layoutX="216.0" layoutY="26.0" text="Informacion general" />
+      <Label fx:id="lblEstadoCivil" layoutX="277.0" layoutY="61.0" text="Estado civil" />
+      <ComboBox fx:id="comboEstado" layoutX="344.0" layoutY="57.0" prefWidth="150.0" />
+      <Label fx:id="lblContrasenia" layoutX="270.0" layoutY="231.0" text="contraseña" />
+      <TextField fx:id="txtContrasenia" layoutX="328.0" layoutY="227.0" />
+      <DatePicker fx:id="dateNacimiento" editable="false" layoutX="332.0" layoutY="138.0" />
+      <Button fx:id="bthRegistrar" layoutX="393.0" layoutY="335.0" mnemonicParsing="false" onAction="#RegistrarUsuario" text="Registrar" />
+      <ComboBox fx:id="comboTipoUsuario" editable="true" layoutX="111.0" layoutY="304.0" prefWidth="150.0" />
+      <Label fx:id="lblEmail1" layoutX="42.0" layoutY="308.0" text="Tipo usuario" />
+   </children>
+</AnchorPane>

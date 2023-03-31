@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="435.0" prefWidth="527.0" stylesheets="@../styles/StyleLogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.concesionario.controller.ViewLoginController">
+   <children>
+      <Label fx:id="lblOlvidoClave" layoutX="42.0" layoutY="366.0" onMousePressed="#recuperarClave" text="Olvidaste la contraseña?" underline="true" />
+      <Button fx:id="btnRegistrarse" layoutX="364.0" layoutY="271.0" mnemonicParsing="false" onAction="#registrarse" prefHeight="25.0" prefWidth="79.0" text="Registrarse">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEntrar" layoutX="206.0" layoutY="296.0" mnemonicParsing="false" onAction="#entrar" prefHeight="45.0" prefWidth="98.0" text="Entrar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtContrasenia" alignment="CENTER" depthTest="DISABLE" layoutX="176.0" layoutY="225.0" promptText="Contraseña">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imgCandado" fitHeight="23.0" fitWidth="24.0" layoutX="148.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/candadoLogin.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmail" alignment="CENTER" cacheHint="QUALITY" depthTest="DISABLE" layoutX="176.0" layoutY="190.0" promptText="Email">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imgUsuario" fitHeight="23.0" fitWidth="24.0" layoutX="148.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/login.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLogo" fitHeight="150.0" fitWidth="98.0" layoutX="206.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
