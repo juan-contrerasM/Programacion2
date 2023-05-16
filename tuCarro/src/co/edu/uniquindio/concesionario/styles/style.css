@@ -1,0 +1,21 @@
+
+#pane{
+	
+	-fx-font-size:13px;
+	-fx-font-family:'Krub', sans-serif;
+	-fx-background: linear-gradient( aquamarine
+	,darkturquoise);	
+}
+
+	
+
+#txtContrasenia{
+	-fx-color:black;
+	-fx-background-color:gray;
+}
+#pane2{
+	-fx-background-color:#00000025;
+	-fx-bacjgroundo-radius:15;
+}
+
+

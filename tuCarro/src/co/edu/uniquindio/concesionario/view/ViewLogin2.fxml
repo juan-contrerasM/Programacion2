@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="435.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.concesionario.controller.ViewLoginController">
+   <children>
+      <Pane fx:id="pane2" layoutX="116.0" layoutY="57.0" prefHeight="322.0" prefWidth="328.0">
+         <children>
+            <TextField fx:id="txtEmail" alignment="CENTER" cacheHint="QUALITY" depthTest="DISABLE" layoutX="85.0" layoutY="111.0" promptText="Email">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtContrasenia" alignment="CENTER" depthTest="DISABLE" layoutX="85.0" layoutY="140.0" promptText="Contraseña">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imgCandado" fitHeight="23.0" fitWidth="24.0" layoutX="59.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/candadoLogin.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgUsuario" fitHeight="23.0" fitWidth="24.0" layoutX="59.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/login.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegistrarse" layoutX="235.0" layoutY="211.0" mnemonicParsing="false" onAction="#registrarse" prefHeight="25.0" prefWidth="79.0" text="Registrarse">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fx:id="txtSingup" layoutX="125.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sing up" textAlignment="CENTER" wrappingWidth="79.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnEntrar" layoutX="105.0" layoutY="236.0" mnemonicParsing="false" onAction="#entrar" prefHeight="36.0" prefWidth="92.0" styleClass="b" text="Entrar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="comboTipoUsuario" layoutX="90.0" layoutY="172.0" prefWidth="150.0" />
+            <Label fx:id="lblOlvidoClave" layoutX="6.0" layoutY="282.0" onMousePressed="#recuperarClave" text="Olvidaste la contraseña?" underline="true" />
+         </children>
+      </Pane>
+      <ImageView fx:id="imgLogo" fitHeight="150.0" fitWidth="98.0" layoutX="231.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

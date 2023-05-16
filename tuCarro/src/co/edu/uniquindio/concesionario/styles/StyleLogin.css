@@ -1,8 +1,0 @@
-#panel{
-	-fx-background-image: url(../resources/logo.png);
-}
-#button{
- -fx-border-width: 1px;
- -fx-background-color:transparent;
- -fx-border-color: black;
-}

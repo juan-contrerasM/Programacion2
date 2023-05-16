@@ -20,11 +20,18 @@ private Stage primaryStage;
 	public void start(Stage primaryStage) {
 	this.primaryStage = primaryStage;
 	try {
-	AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("view/ViewLogin.fxml"));
+	AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("view/ViewLogin2.fxml"));
 	Scene scene = new Scene(root);
 	primaryStage.setTitle("Login");
 	primaryStage.setScene(scene);
 	primaryStage.show();
+	//codigo para agregar css
+	String css= this.getClass().getResource("styles/style.css").toExternalForm();
+	scene.getStylesheets().add(css);
+	primaryStage.setScene(scene);
+	primaryStage.show();
+	
+	
 	//Persistencia.guardaRegistroLog(MensajesInformationConstants.LANZAR_APLICACION, 1, "Cargar Aplicacion");
 	} catch (Exception e) {
 		e.printStackTrace();

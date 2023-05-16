@@ -1,13 +1,26 @@
 package co.edu.uniquindio.concesionario.model;
 
+import co.edu.uniquindio.concesionario.enums.TipoUsuario;
+
 public class Usuario extends Persona{
 	
 	private	String email;
 	private	String telefono;
 	private	String contrasenia;
+	private TipoUsuario tipoUsuario;
 	
 	
 	
+	public TipoUsuario getTipoUsuario() {
+		return tipoUsuario;
+	}
+
+
+	public void setTipoUsuario(TipoUsuario tipoUsuario) {
+		this.tipoUsuario = tipoUsuario;
+	}
+
+
 	public Usuario() {}
 	
 	

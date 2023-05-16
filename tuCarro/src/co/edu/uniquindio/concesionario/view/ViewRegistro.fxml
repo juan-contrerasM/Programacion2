@@ -26,7 +26,7 @@
       <TextField fx:id="txtContrasenia" layoutX="328.0" layoutY="227.0" />
       <DatePicker fx:id="dateNacimiento" editable="false" layoutX="332.0" layoutY="138.0" />
       <Button fx:id="bthRegistrar" layoutX="393.0" layoutY="335.0" mnemonicParsing="false" onAction="#RegistrarUsuario" text="Registrar" />
-      <ComboBox fx:id="comboTipoUsuario" editable="true" layoutX="111.0" layoutY="304.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboTipoUsuario" layoutX="111.0" layoutY="304.0" prefWidth="150.0" />
       <Label fx:id="lblEmail1" layoutX="42.0" layoutY="308.0" text="Tipo usuario" />
    </children>
 </AnchorPane>
